@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HUFANCIA [F3-FORMATIVE]</title>
+    <link rel="stylesheet" href="./external_registration.css">
+</head>
+<body>
+    <div class="background"></div>
+    <div class="container">
+    <form>
+        <!-- Header -->
+        <header class="header">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgcPy2pt3Ke8LwS8UuKDr0-x9x3RST_lrxpgttvUhvBA&s" alt="Company Logo" style="border-radius: 110px; width: 150px; height: 150px;">
+            <h1>Diwata Pares Employee Registration</h1>
+            <p>Please fill out the form below</p>
+        </header>
+
+        <!-- Personal Info -->
+        <section class="section-box">
+            <h2>PERSONAL INFORMATION</h2>
+            <div class="form-group">
+                <input type="text" id="firstname" name="firstname" placeholder="First Name" required>
+                <input type="text" id="middlename" name="middlename" placeholder="Middle Name" required>
+                <input type="text" id="lastname" name="lastname" placeholder="Last Name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="gender">Gender:</label>
+                <div class="radio-group">
+                    <input type="radio" id="male" name="gender" value="male" required>
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female" required>
+                    <label for="female">Female</label>
+                    <input type="radio" id="other" name="gender" value="other" required>
+                    <label for="other">Other</label>
+                </div>
+            </div>
+            
+
+            <div class="form-group">
+                <label for="marital-status">Marital Status:</label>
+                    <select id="marital-status" name="marital-status" required>
+                        <option value="" disabled selected>Select</option>
+                        <option value="Single">Single</option>
+                        <option value="Married">Married</option>
+                        <option value="Divorced">Divorced</option>
+                        <option value="Widowed">Widowed</option>
+                    </select>
+                <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob" required>
+            </div>
+        </section>
+
+        <!-- Address -->
+        <section class="section-box">
+            <h2>ADDRESS</h2>
+            <div class="form-group">
+                <input type="text" id="street" name="street" placeholder="Street No., Street Name, Barangay" required>
+                <input type="text" id="city" name="city" placeholder="City" required>
+                <input type="text" id="state" name="state" placeholder="State/Province" required>
+                <input type="text" id="zipcode" name="zipcode" placeholder="ZIP Code" required>
+                <input type="text" id="country" name="country" placeholder="Country" required>
+            </div>
+        </section>
+        
+        <!-- Contact Info -->
+        <section class="section-box">
+            <h2>CONTACT INFORMATION</h2>
+            <div class="form-group">
+                <input type="email" id="email" name="email" placeholder="Email Address" required>
+                <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
+            </div>
+        </section>
+
+        <!-- Position -->
+        <section class="section-box">
+            <h2>APPLYING POSITION</h2>
+            <div class="form-group">
+                <select id="position" name="position" required>
+                    <option value="" disabled selected>Select Position</option>
+                    <option value="Busser">Busser</option>
+                    <option value="Cashier">Cashier</option>
+                    <option value="Cook">Cook</option>
+                    <option value="Dishwasher">Dishwasher</option>
+                    <option value="Server">Server</option>
+                </select>
+                <label for="starting-date">Starting Date:</label>
+                <input type="date" id="starting-date" name="starting-date" required>
+            </div>
+        </section>
+        
+        <!-- Resume -->
+        <section class="section-box">
+            <h2>UPLOAD RESUME</h2>
+            <div class="form-group">
+                <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+            </div>
+        </section>
+
+        <!-- Additional Mesasge -->
+        <section class="section-box">
+            <h2>ADDITIONAL MESSAGE</h2>
+            <div class="form-group">
+                <textarea id="additional-message" name="additional-message" rows="4" placeholder="Type your message here..." required></textarea>
+            </div>
+        </section>
+        <br>
+
+        <button type="submit">REGISTER NOW!</button>
+    </form>
+    </div>
+</body>
+</html>
